@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicios</title>
+  </head>
+  <body>
+    <h1>Exercicio 1</h1>
+    <button onclick="umAdez()">Clique para começar</button>
+    <div id="exercicio1"></div>
+
+    <h1>Exercicio 2</h1>
+    <button onclick="UgaBuga()">Clique para começar</button>
+    <div id="exercicio2"></div>
+
+    <h1>Exercicio 3</h1>
+    <button onclick="tabua()">Clique para começar</button>
+    <div id="exercicio3"></div>
+
+    <h1>Exercicio 4</h1>
+    <button onclick="eltabua()">Clique para começar</button>
+    <div id="exercicio4"></div>
+
+    <h1>Exercicio 5</h1>
+    <button onclick="UEEPAA()">Clique para começar</button>
+    <div id="exercicio5"></div>
+
+    <h1>Exercicio 6</h1>
+    <button onclick="dancagatinho()">Clique para começar</button>
+    <div id="exercicio6"></div>
+
+    <h1>Exercicio 7</h1>
+    <button onclick="cavalo()">Clique para começar</button>
+    <div id="exercicio7"></div>
+  </body>
+
+  <script>
+    function umAdez() {
+      let i = 1;
+      let res = document.getElementById("exercicio1");
+      res.innerHTML = "";
+      while (i <= 10) {
+        res.innerHTML += "<p>Numero, " + i + "</p>";
+        i++;
+      }
+    }
+
+    function UgaBuga() {
+      let i = 1;
+      let res = document.getElementById("exercicio2");
+      res.innerHTML = "";
+      while (i <= 100) {
+        if (i % 2) res.innerHTML += "<p>Impares, " + i + "</p>";
+        i++;
+      }
+    }
+
+    function tabua() {
+      let i = 1;
+      let res = document.getElementById("exercicio3");
+      res.innerHTML = "";
+      while (i <= 10) {
+        res.innerHTML += "<p>8 x , " + i + " = " + 8 * i + "</p>";
+        i++;
+      }
+    }
+
+    function eltabua() {
+      let i = 1;
+      let res = document.getElementById("exercicio4");
+      res.innerHTML = "";
+      for (let num = 1; num <= 10; num++) {
+        for (let mult = 1; mult <= 10; mult++) {
+          res.innerHTML +="<p>" + num + " x , " + mult + " = " + num * mult + "</p>";
+        }
+      }
+    }
+
+    function UEEPAA() {
+      let i = 10;
+      let res = document.getElementById("exercicio5");
+      let num = Number(window.prompt("Digite o numero de porcentagem %"));
+      let num2 = Number(window.prompt("Digite o numero"));
+      res.innerHTML = "";
+      res.innerHTML += `<p>A porcentagem dele ${(num / 100) * num2}%</p>`;
+    }
+
+    function dancagatinho() {
+      let i = 11;
+      let res = document.getElementById("exercicio6");
+      res.innerHTML = "";
+      while (i <= 30) {
+        res.innerHTML += `<p>${i+i}</p>`;
+        i++;
+      }
+    }
+
+    function cavalo() {
+      let i = 11;
+      let res = document.getElementById("exercicio6");
+      res.innerHTML = "";
+      while (i <= 30) {
+        res.innerHTML += `<p>${i+i}</p>`;
+        i++;
+      }
+
+    }
+  </script>
+</html>
