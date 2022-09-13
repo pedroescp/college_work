@@ -34,6 +34,10 @@
     <h1>Exercicio 7</h1>
     <button onclick="cavalo()">Clique para começar</button>
     <div id="exercicio7"></div>
+
+    <h1>Exercicio 8</h1>
+    <button onclick="arrayLoco()">Clique para começar</button>
+    <div id="exercicio8"></div>
   </body>
 
   <script>
@@ -73,7 +77,8 @@
       res.innerHTML = "";
       for (let num = 1; num <= 10; num++) {
         for (let mult = 1; mult <= 10; mult++) {
-          res.innerHTML +="<p>" + num + " x , " + mult + " = " + num * mult + "</p>";
+          res.innerHTML +=
+            "<p>" + num + " x , " + mult + " = " + num * mult + "</p>";
         }
       }
     }
@@ -92,20 +97,35 @@
       let res = document.getElementById("exercicio6");
       res.innerHTML = "";
       while (i <= 30) {
-        res.innerHTML += `<p>${i+i}</p>`;
+        res.innerHTML += `<p>${i + i}</p>`;
         i++;
       }
     }
 
     function cavalo() {
-      let i = 11;
-      let res = document.getElementById("exercicio6");
-      res.innerHTML = "";
-      while (i <= 30) {
-        res.innerHTML += `<p>${i+i}</p>`;
-        i++;
+      let array = [];
+      let num = Number(window.prompt("Digite quantas posicoes"));
+
+      for (let i = 0; i < num; i++) {
+        array.push(Number(window.prompt("Digite quantas posicoes")));
       }
 
+      var lodash = require("lodash");
+      var arr = [3, 6, 1, 5, 8];
+      var sum = lodash.sum(arr);
+      console.log(sum);
+    }
+
+    function arrayLoco() {
+      let res = document.getElementById("exercicio8");
+
+      let num = Number(
+        window.prompt("Digite quantidade de numeros que ira digitar")
+      );
+
+      for (let num = 0; num < array.length; index++) {
+        let res = document.getElementById("exercicio6");
+      }
     }
   </script>
 </html>

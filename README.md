@@ -1,4 +1,4 @@
-# College
+# Arduino
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/pedroescp)
 
@@ -7,14 +7,14 @@
 
 ## I See at moment its be
 
-- javascript
-- c++  
-- C# [Project]<https://github.com/lipenau1/Api-Anotacoes>
-- html
-- css
-- python
-- tests
-- react  [Project]<https://github.com/lipenau1/Front-end-Anotacoes>
+--javascript
+--c++  
+--C# [Project]<https://github.com/lipenau1/Api-Anotacoes>
+--html
+--css
+--python
+--tests
+--react  [Project]<https://github.com/lipenau1/Front-end-Anotacoes>
 
 
 **Thanks for attention!**
